@@ -12,12 +12,3 @@ import java.lang.annotation.RetentionPolicy;
 public @interface SetTable {
     String value();
 }
-
-@SetTable("user_table")
-class UserEntity{
-    @SetProperty(name = "user_name", length = 10)
-    private String userName;
-
-    
-    private Integer userAge;
-}
